@@ -30,6 +30,7 @@
 - [Nimble](https://github.com/bespokelabsai/nimble) - Local typed decisions, plus contrastive data curation and model evaluation.
 - [Tev1](https://huggingface.co/togethercomputer/Tev1-4B-experimental) - Together experimental fine-tune of Qwen3.5-4B that picks one option from a state, a question, and a list of choices.
 - [Laya](https://github.com/NandhaKishorM/laya) - Non-autoregressive System One engine for typed choice, score, and yes/no over text in one forward pass.
+- [Jeeves](https://github.com/PostHog/jeeves) - PostHog open 9B Jev-like model (MIT) that reasons before it decides, answering choice, score, and yes/no questions through a Jev-compatible API.
 
 ## Gateways
 
@@ -55,6 +56,8 @@
 - [Cloudflare announcement](https://x.com/Cloudflare/status/2105747536510099540) - Birthday Week post for Clef. Swap for a docs URL when one exists.
 - [Perplexity Decisions quickstart](https://docs.perplexity.ai/docs/decisions/quickstart) - Official Decisions API quickstart, in place of the launch post.
 - [Perplexity follow-up](https://x.com/AravSrinivas/status/2106119404433908149) - Follow-up on the decider versus Jev.
+- [How to classify, route, and score with Jev and AI SDK](https://vercel.com/kb/guide/typesafe-jev-and-ai-sdk) - Vercel guide to typed Jev answers through the AI SDK `experimental_evaluate` API and AI Gateway.
+- [How to Use Jev: Moderation with the Jev API in TypeScript](https://openrouter.ai/blog/tutorials/how-to-use-jev/) - OpenRouter tutorial building a marketplace listing moderation check from choice, yes/no, and score questions.
 
 ## Related
 
