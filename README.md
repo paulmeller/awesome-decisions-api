@@ -31,6 +31,7 @@
 - [Tev1](https://huggingface.co/togethercomputer/Tev1-4B-experimental) - Together experimental fine-tune of Qwen3.5-4B that picks one option from a state, a question, and a list of choices.
 - [Laya](https://github.com/NandhaKishorM/laya) - Non-autoregressive System One engine for typed choice, score, and yes/no over text in one forward pass.
 - [Jeeves](https://github.com/PostHog/jeeves) - PostHog open 9B Jev-like model (MIT) that reasons before it decides, answering choice, score, and yes/no questions through a Jev-compatible API.
+- [Wald-Q4B](https://huggingface.co/org2ai/Wald-4B) - Open-weight 4B decision model (Apache-2.0) built on Qwen3.5-4B-Base that returns a calibrated probability for every option through a Jev-compatible `/v1/systemone` API.
 
 ## Gateways
 
@@ -58,6 +59,7 @@
 - [Perplexity follow-up](https://x.com/AravSrinivas/status/2106119404433908149) - Follow-up on the decider versus Jev.
 - [How to classify, route, and score with Jev and AI SDK](https://vercel.com/kb/guide/typesafe-jev-and-ai-sdk) - Vercel guide to typed Jev answers through the AI SDK `experimental_evaluate` API and AI Gateway.
 - [How to Use Jev: Moderation with the Jev API in TypeScript](https://openrouter.ai/blog/tutorials/how-to-use-jev/) - OpenRouter tutorial building a marketplace listing moderation check from choice, yes/no, and score questions.
+- [Jev for Python engineers](https://vercel.com/blog/jev-for-python-engineers) - Vercel post introducing the experimental `evaluate()` API in the AI SDK for Python, with `ChoiceQuestion`, `ScoreQuestion`, and `NoulQuestion` types, published October 2026.
 
 ## Related
 
