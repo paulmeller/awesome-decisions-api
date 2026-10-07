@@ -33,6 +33,7 @@
 - [Jeeves](https://github.com/PostHog/jeeves) - PostHog open 9B Jev-like model (MIT) that reasons before it decides, answering choice, score, and yes/no questions through a Jev-compatible API.
 - [TokenAI Neo](https://tokenai.llc/models/neo) - Open-weights 41M-parameter encoder decision model with choice, score, and noul heads that flags low-confidence tool routing for review. Custom TokenAI license.
 - [Wald-Q4B](https://huggingface.co/org2ai/Wald-4B) - Open-weight 4B decision model (Apache-2.0) built on Qwen3.5-4B-Base that returns a calibrated probability for every option through a Jev-compatible `/v1/systemone` API.
+- [gutsy](https://github.com/kouhxp/gutsy) - Local 0.8B decision model (Apache-2.0), a Qwen3.5-0.8B fine-tune that runs on CPU through llama.cpp and answers yes/no, choice, and score questions through a Jev-style API.
 
 ## Gateways
 
@@ -49,6 +50,7 @@
 
 - [Ollama decision models](https://ollama.com/blog/ollama-now-supports-jev-style-decision-models) - Local Jev-style choice, score, and yes/no, with a probability on every option.
 - [OpenRouter decisions filter](https://openrouter.ai/models?output_modalities=decisions) - Catalog filtered to models with decision output.
+- [Bud Decision Studio](https://github.com/BudEcosystem/Bud-Decision-Studio) - Desktop app and local server for running open Jev-like decision models on macOS, Windows, and Linux, returning a calibrated probability for every answer.
 
 ## Articles and Press
 
@@ -62,6 +64,8 @@
 - [How to Use Jev: Moderation with the Jev API in TypeScript](https://openrouter.ai/blog/tutorials/how-to-use-jev/) - OpenRouter tutorial building a marketplace listing moderation check from choice, yes/no, and score questions.
 - [LLM2Jev](https://arxiv.org/abs/2610.02076) - Paper from Microsoft researchers showing general-purpose LLMs already work as Jev-style decision models out of the box, with a training-free readout and a KL-anchored fine-tuning recipe.
 - [Jev for Python engineers](https://vercel.com/blog/jev-for-python-engineers) - Vercel post introducing the experimental `evaluate()` API in the AI SDK for Python, with `ChoiceQuestion`, `ScoreQuestion`, and `NoulQuestion` types, published October 2026.
+- [The First Open-Weight Alternatives to Jev](https://whitepapers.aetherix.com/papers/jev-open-weight-alternatives/) - Aetherix white paper comparing six open-weight decision models on one NVIDIA DGX Spark with a shared 25-question smoke test, published October 2026.
+- [General Decision Models: Benchmarking and Insights Beyond Jev](https://arxiv.org/abs/2610.03935) - Paper introducing JEVal, a bilingual benchmark of 11,257 instances across 36 datasets, and the InnerJev-4B and InnerJev-27B decision models.
 
 ## Related
 
