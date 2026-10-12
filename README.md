@@ -34,6 +34,9 @@
 - [TokenAI Neo](https://tokenai.llc/models/neo) - Open-weights 41M-parameter encoder decision model with choice, score, and noul heads that flags low-confidence tool routing for review. Custom TokenAI license.
 - [Wald-Q4B](https://huggingface.co/org2ai/Wald-4B) - Open-weight 4B decision model (Apache-2.0) built on Qwen3.5-4B-Base that returns a calibrated probability for every option through a Jev-compatible `/v1/systemone` API.
 - [gutsy](https://github.com/kouhxp/gutsy) - Local 0.8B decision model (Apache-2.0), a Qwen3.5-0.8B fine-tune that runs on CPU through llama.cpp and answers yes/no, choice, and score questions through a Jev-style API.
+- [Microsoft-Decision-1](https://learn.microsoft.com/en-us/azure/foundry/foundry-models/how-to/use-foundry-models-microsoft-decision) - Microsoft Foundry decision model for classification, routing, ranking, and grading that returns `noul`, `choice`, and `score` answers from a `/v1/systemone` endpoint.
+- [OpenAI Decisions API](https://developers.openai.com/api/docs/guides/decisions) - Public beta `POST /v1/decisions` endpoint on `gpt-6-luna` for predicate, choice, and score questions over text and images. Input-only pricing at $0.10 per million tokens.
+- [H2O-Lightning-4B](https://huggingface.co/h2oai/h2o-lightning-4b) - H2O.ai open-weight 4B decision model (Apache-2.0) built on Qwen3.5-4B that answers choice, yes/no, and score questions about text and images through a `/v1/systemone` API.
 
 ## Gateways
 
@@ -51,6 +54,9 @@
 - [Ollama decision models](https://ollama.com/blog/ollama-now-supports-jev-style-decision-models) - Local Jev-style choice, score, and yes/no, with a probability on every option.
 - [OpenRouter decisions filter](https://openrouter.ai/models?output_modalities=decisions) - Catalog filtered to models with decision output.
 - [Bud Decision Studio](https://github.com/BudEcosystem/Bud-Decision-Studio) - Desktop app and local server for running open Jev-like decision models on macOS, Windows, and Linux, returning a calibrated probability for every answer.
+- [ollaya](https://github.com/ollaya-dev/ollaya) - Local daemon that pulls open decision models such as Laya by name and serves them behind TypeSafe's `/v1/systemone` wire format, the way Ollama runs LLMs.
+- [vLLM Jev](https://github.com/mode-io/vllm-jev) - Native vLLM serving for Jev-style decision models on Linux, with an Apple Silicon preview, answering Choice, Noul, and Score requests at `/v1/systemone`.
+- [AnyJev](https://github.com/nokia-applied-research/AnyJev) - Nokia Applied Research library (Apache-2.0) that turns an existing LLM into a Jev-style decision model with a training-free readout, plus self-distilled Tacit models from 1.7B to 9B.
 
 ## Articles and Press
 
