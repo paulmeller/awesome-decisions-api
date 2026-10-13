@@ -34,6 +34,9 @@
 - [TokenAI Neo](https://tokenai.llc/models/neo) - Open-weights 41M-parameter encoder decision model with choice, score, and noul heads that flags low-confidence tool routing for review. Custom TokenAI license.
 - [Wald-Q4B](https://huggingface.co/org2ai/Wald-4B) - Open-weight 4B decision model (Apache-2.0) built on Qwen3.5-4B-Base that returns a calibrated probability for every option through a Jev-compatible `/v1/systemone` API.
 - [gutsy](https://github.com/kouhxp/gutsy) - Local 0.8B decision model (Apache-2.0), a Qwen3.5-0.8B fine-tune that runs on CPU through llama.cpp and answers yes/no, choice, and score questions through a Jev-style API.
+- [Decision 3.0](https://huggingface.co/collections/vllm-sr/decision-30-6aca5f47b0d942380f6e4a64) - vLLM Semantic Router family of six Apache-2.0 multimodal decision models, from d3-edge to the 27B d3, that answer Choice, Yes/No, and Score questions over text, images, and video with a probability for every answer.
+- [OneJev](https://github.com/OmniJev/OneJev) - Apache-2.0 multimodal System One decision model on Qwen in 0.8B, 4B, 9B, and 27B sizes that returns calibrated probabilities for typed questions about screenshots, photos, videos, and text through a TypeSafe System One-compatible API.
+- [RSI-Jev](https://github.com/Shanghua-Gao/RSI-Jev) - Jev-style decision models built by a self-improving loop of AI agents that publishes every experiment, failures included, with Apache-2.0 weights and a Jev-compatible `/v1/systemone` server.
 
 ## Gateways
 
