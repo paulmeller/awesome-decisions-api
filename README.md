@@ -34,12 +34,17 @@
 - [TokenAI Neo](https://tokenai.llc/models/neo) - Open-weights 41M-parameter encoder decision model with choice, score, and noul heads that flags low-confidence tool routing for review. Custom TokenAI license.
 - [Wald-Q4B](https://huggingface.co/org2ai/Wald-4B) - Open-weight 4B decision model (Apache-2.0) built on Qwen3.5-4B-Base that returns a calibrated probability for every option through a Jev-compatible `/v1/systemone` API.
 - [gutsy](https://github.com/kouhxp/gutsy) - Local 0.8B decision model (Apache-2.0), a Qwen3.5-0.8B fine-tune that runs on CPU through llama.cpp and answers yes/no, choice, and score questions through a Jev-style API.
+- [OpenJev](https://huggingface.co/openjev/openjev) - Open-weights 27B decision model that answers choice, yes/no, and score questions about text, web pages, and screenshots through a Jev-compatible `/v1/systemone` API. CC BY-NC 4.0 weights.
+- [AutoTrust JEV](https://huggingface.co/autotrust/JEV-9B) - Open Apache-2.0 family (JEV-9B and JEV-27B) that serves calibrated System 1 decisions (`noul`, `choice`, `score`) and System 2 generation from one set of weights through a `/v1/decide` endpoint.
+- [Julia 1](https://supersoniclabs.ai/julia-1/) - Compact 144M multilingual decision model (Apache-2.0) built on mmBERT-small that classifies, ranks ordered levels, and answers yes-or-no questions among supplied options, including on CPU.
+- [Open-Jev](https://zefan-cai.github.io/open-jev/) - Open family of LoRA decision adapters (2B, 9B, and 27B) over Qwen that return typed Choice, Noul, and Score probabilities through a `/v1/systemone` server.
 
 ## Gateways
 
 - [OpenRouter Decisions](https://openrouter.ai/docs/guides/community/jev) - Jev via `/api/alpha/decisions` and `/api/v1/systemone`.
 - [Vercel AI Gateway](https://vercel.com/changelog/typesafe-ai-jev-now-available-on-ai-gateway) - `typesafe-ai/jev` through the AI SDK `evaluate` helper.
 - [Cloudflare Workers AI](https://developers.cloudflare.com/ai/models/typesafe/jev/) - `typesafe/jev` on the Workers AI binding. Clef is on the same binding; its model page is under Models.
+- [LiteLLM Decisions](https://docs.litellm.ai/docs/decisions) - Proxy routes `POST /v1/decisions` and `POST /v1/systemone` that translate between OpenAI Decisions and System One formats across providers such as OpenAI, TypeSafe Jev, Perplexity, Cloudflare Clef, and self-hosted vLLM.
 
 ## SDKs
 
@@ -51,6 +56,7 @@
 - [Ollama decision models](https://ollama.com/blog/ollama-now-supports-jev-style-decision-models) - Local Jev-style choice, score, and yes/no, with a probability on every option.
 - [OpenRouter decisions filter](https://openrouter.ai/models?output_modalities=decisions) - Catalog filtered to models with decision output.
 - [Bud Decision Studio](https://github.com/BudEcosystem/Bud-Decision-Studio) - Desktop app and local server for running open Jev-like decision models on macOS, Windows, and Linux, returning a calibrated probability for every answer.
+- [llama.cpp decision models](https://huggingface.co/blog/ggml-org/decision-models-in-llamacpp) - Local `/v1/systemone` endpoint in the llama.cpp server for Jev-style choice, score, and noul questions, with GGUF builds of models such as Julia-1, Laya, Kev-4B, and OpenJev.
 
 ## Articles and Press
 
