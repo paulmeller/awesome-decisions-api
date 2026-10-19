@@ -15,6 +15,7 @@
 ## Official Resources
 
 - [Introducing System One and Jev](https://typesafe.ai/blog/introducing-system-one-models-and-jev) - TypeSafe announcement of the decision-model category and Jev. Direct API, not a gateway.
+- [Jev 1.14 Release](https://typesafe.ai/blog/jev-1-14) - TypeSafe post releasing `jev-1.14.0` with experimental image input, a `box` question type that returns a bounding box, and opt-in long context.
 
 ## Models
 
@@ -36,12 +37,15 @@
 - [gutsy](https://github.com/kouhxp/gutsy) - Local 0.8B decision model (Apache-2.0), a Qwen3.5-0.8B fine-tune that runs on CPU through llama.cpp and answers yes/no, choice, and score questions through a Jev-style API.
 - [Databricks ai_decide](https://docs.databricks.com/aws/en/sql/language-manual/functions/ai_decide) - Beta Databricks AI Function that answers `noul`, `choice`, and `score` questions over text or structured data in SQL, returning a probability, a named choice, or a score on an ordered scale.
 - [Decision Models](https://decisionmodels.io/) - Hosted Jev-compatible API, formerly System1 Models, that serves the open-weight decision models `s1-fast`, `s1-pro`, and `s1-vision`, with an optional EU-hosted tier.
+- [Jebadiah v2.1](https://huggingface.co/blog/frontier-infra/jebadiah-v2-1) - Open decision models in 9B and 27B (Apache-2.0) with GGUF and MLX builds, answering typed questions with a pick and a confidence in a single pass.
+- [Lumma-Fev-27B](https://huggingface.co/blog/FrontiersMind/lumma-fev-27b) - FrontiersMind 27B decision model (Apache-2.0) on the same `/v1/systemone` contract as Jev, trained on `noul` and `choice` questions in English, Hindi, Tamil, and Kannada.
 
 ## Gateways
 
 - [OpenRouter Decisions](https://openrouter.ai/docs/guides/community/jev) - Jev via `/api/alpha/decisions` and `/api/v1/systemone`.
 - [Vercel AI Gateway](https://vercel.com/changelog/typesafe-ai-jev-now-available-on-ai-gateway) - `typesafe-ai/jev` through the AI SDK `evaluate` helper.
 - [Cloudflare Workers AI](https://developers.cloudflare.com/ai/models/typesafe/jev/) - `typesafe/jev` on the Workers AI binding. Clef is on the same binding; its model page is under Models.
+- [AI/ML API Decision Models](https://docs.aimlapi.com/api-references/decision-models) - TypeSafe Jev 1.14 and 1.13 alongside Liquid AI and OpenAI decision models on the AI/ML API.
 
 ## SDKs
 
@@ -68,6 +72,8 @@
 - [Jev for Python engineers](https://vercel.com/blog/jev-for-python-engineers) - Vercel post introducing the experimental `evaluate()` API in the AI SDK for Python, with `ChoiceQuestion`, `ScoreQuestion`, and `NoulQuestion` types, published October 2026.
 - [The First Open-Weight Alternatives to Jev](https://whitepapers.aetherix.com/papers/jev-open-weight-alternatives/) - Aetherix white paper comparing six open-weight decision models on one NVIDIA DGX Spark with a shared 25-question smoke test, published October 2026.
 - [General Decision Models: Benchmarking and Insights Beyond Jev](https://arxiv.org/abs/2610.03935) - Paper introducing JEVal, a bilingual benchmark of 11,257 instances across 36 datasets, and the InnerJev-4B and InnerJev-27B decision models.
+- [Jev 1.14 on AI Gateway](https://vercel.com/changelog/typesafe-ais-jev-1-14-is-now-available-on-ai-gateway) - Vercel changelog adding `typesafe-ai/jev-1.14.0` to AI Gateway, with image input and an experimental long-context mode, published October 15, 2026.
+- [AI Decision Models Compared](https://www.techfabric.com/blog/ai-decision-models-compared-jev-clef-kev-microsoft) - TechFabric comparison of TypeSafe Jev, Cloudflare Clef, Kev, and Microsoft-Decision-1, published October 2026.
 
 ## Related
 
