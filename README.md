@@ -36,12 +36,16 @@
 - [gutsy](https://github.com/kouhxp/gutsy) - Local 0.8B decision model (Apache-2.0), a Qwen3.5-0.8B fine-tune that runs on CPU through llama.cpp and answers yes/no, choice, and score questions through a Jev-style API.
 - [Databricks ai_decide](https://docs.databricks.com/aws/en/sql/language-manual/functions/ai_decide) - Beta Databricks AI Function that answers `noul`, `choice`, and `score` questions over text or structured data in SQL, returning a probability, a named choice, or a score on an ordered scale.
 - [Decision Models](https://decisionmodels.io/) - Hosted Jev-compatible API, formerly System1 Models, that serves the open-weight decision models `s1-fast`, `s1-pro`, and `s1-vision`, with an optional EU-hosted tier.
+- [Liquid AI open d1](https://huggingface.co/blog/LiquidAI/open-d1) - Open-weight d1-3B (text and images) and experimental d1-omni-600M (text with images or audio) decision models built for edge devices.
 
 ## Gateways
 
 - [OpenRouter Decisions](https://openrouter.ai/docs/guides/community/jev) - Jev via `/api/alpha/decisions` and `/api/v1/systemone`.
 - [Vercel AI Gateway](https://vercel.com/changelog/typesafe-ai-jev-now-available-on-ai-gateway) - `typesafe-ai/jev` through the AI SDK `evaluate` helper.
 - [Cloudflare Workers AI](https://developers.cloudflare.com/ai/models/typesafe/jev/) - `typesafe/jev` on the Workers AI binding. Clef is on the same binding; its model page is under Models.
+- [TrueFoundry AI Gateway](https://www.truefoundry.com/blog/blog-decisions-api-is-now-live-on-truefoundry-ai-gateway) - Serves decision models on both `POST /v1/decisions` and `POST /v1/systemone`, translating between the OpenAI and System One formats across seven providers.
+- [OpenAI Decisions on Vercel AI Gateway](https://vercel.com/changelog/openai-decisions-api-now-available-on-ai-gateway) - Vercel changelog adding the OpenAI-format `/v1/decisions` endpoint to AI Gateway, with `openai/gpt-6-luna-decisions` and other decision models.
+- [AnyRouter Decisions](https://blog.anyrouter.dev/releases/2026-10-10-decisions) - AnyRouter release adding Microsoft-Decision-1, Solar Decide Flash, PPLX Decider v1.1, Drex v1.5, and SubQ Snap Preview behind one `POST /api/v1/decisions` contract.
 
 ## SDKs
 
@@ -53,6 +57,7 @@
 - [Ollama decision models](https://ollama.com/blog/ollama-now-supports-jev-style-decision-models) - Local Jev-style choice, score, and yes/no, with a probability on every option.
 - [OpenRouter decisions filter](https://openrouter.ai/models?output_modalities=decisions) - Catalog filtered to models with decision output.
 - [Bud Decision Studio](https://github.com/BudEcosystem/Bud-Decision-Studio) - Desktop app and local server for running open Jev-like decision models on macOS, Windows, and Linux, returning a calibrated probability for every answer.
+- [vLLM Structured Decisions Models](https://docs.vllm.ai/en/latest/models/structured_decisions_models/) - vLLM docs for its text-only implementation of OpenAI's `POST /v1/decisions` API on self-served models.
 
 ## Articles and Press
 
@@ -68,6 +73,7 @@
 - [Jev for Python engineers](https://vercel.com/blog/jev-for-python-engineers) - Vercel post introducing the experimental `evaluate()` API in the AI SDK for Python, with `ChoiceQuestion`, `ScoreQuestion`, and `NoulQuestion` types, published October 2026.
 - [The First Open-Weight Alternatives to Jev](https://whitepapers.aetherix.com/papers/jev-open-weight-alternatives/) - Aetherix white paper comparing six open-weight decision models on one NVIDIA DGX Spark with a shared 25-question smoke test, published October 2026.
 - [General Decision Models: Benchmarking and Insights Beyond Jev](https://arxiv.org/abs/2610.03935) - Paper introducing JEVal, a bilingual benchmark of 11,257 instances across 36 datasets, and the InnerJev-4B and InnerJev-27B decision models.
+- [How to Use the OpenAI Decisions API](https://apidog.com/blog/how-to-use-openai-decisions-api/) - Apidog walkthrough of first calls in curl, Python, and JavaScript, the predicate, choice, and score answer types, and image input.
 
 ## Related
 
