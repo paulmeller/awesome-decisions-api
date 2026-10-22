@@ -47,6 +47,7 @@
 
 - [TypeSafe Python SDK](https://github.com/typesafe-ai/typesafe-sdk-python) - Official Python library for the TypeSafe API.
 - [TypeSafe JavaScript SDK](https://github.com/typesafe-ai/typesafe-sdk-js) - Official TypeScript and JavaScript library for the TypeSafe API.
+- [decision-pony](https://github.com/CyanSalt/decision-pony) - TypeScript library that converts OpenAI Decisions API requests to Chat Completions, Responses, or Anthropic Messages requests and back so those APIs can act as a Decisions polyfill, and also converts to and from the TypeSafe Jev API.
 
 ## Runtimes
 
@@ -68,6 +69,7 @@
 - [Jev for Python engineers](https://vercel.com/blog/jev-for-python-engineers) - Vercel post introducing the experimental `evaluate()` API in the AI SDK for Python, with `ChoiceQuestion`, `ScoreQuestion`, and `NoulQuestion` types, published October 2026.
 - [The First Open-Weight Alternatives to Jev](https://whitepapers.aetherix.com/papers/jev-open-weight-alternatives/) - Aetherix white paper comparing six open-weight decision models on one NVIDIA DGX Spark with a shared 25-question smoke test, published October 2026.
 - [General Decision Models: Benchmarking and Insights Beyond Jev](https://arxiv.org/abs/2610.03935) - Paper introducing JEVal, a bilingual benchmark of 11,257 instances across 36 datasets, and the InnerJev-4B and InnerJev-27B decision models.
+- [Decision Tier](https://robgruhl.github.io/jev-learnings/) - Tutorial site drawn from two projects that use Jev as a cheap, fast judgment tier between deterministic code and an expensive LLM, running from ELI5 to engineering.
 
 ## Related
 
