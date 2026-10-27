@@ -36,6 +36,8 @@
 - [gutsy](https://github.com/kouhxp/gutsy) - Local 0.8B decision model (Apache-2.0), a Qwen3.5-0.8B fine-tune that runs on CPU through llama.cpp and answers yes/no, choice, and score questions through a Jev-style API.
 - [Databricks ai_decide](https://docs.databricks.com/aws/en/sql/language-manual/functions/ai_decide) - Beta Databricks AI Function that answers `noul`, `choice`, and `score` questions over text or structured data in SQL, returning a probability, a named choice, or a score on an ordered scale.
 - [Decision Models](https://decisionmodels.io/) - Hosted Jev-compatible API, formerly System1 Models, that serves the open-weight decision models `s1-fast`, `s1-pro`, and `s1-vision`, with an optional EU-hosted tier.
+- [Liquid d1-ultra](https://www.liquid.ai/blog/d1-ultra) - Liquid AI multimodal decision model that reads text, images, or both and returns noul, choice, and score probabilities in one forward pass with no generated tokens. About $0.042 per million input tokens on the Liquid API.
+- [Base Labs mammoth-1 and elephant-1](https://labs.baseten.co/articles/mammoth-1-and-elephant-1-frontier-decision-models) - Open-weight 27B and 9B decision models post-trained from Qwen3.5 with block-bidirectional attention, with weights released on Hugging Face.
 
 ## Gateways
 
@@ -68,6 +70,9 @@
 - [Jev for Python engineers](https://vercel.com/blog/jev-for-python-engineers) - Vercel post introducing the experimental `evaluate()` API in the AI SDK for Python, with `ChoiceQuestion`, `ScoreQuestion`, and `NoulQuestion` types, published October 2026.
 - [The First Open-Weight Alternatives to Jev](https://whitepapers.aetherix.com/papers/jev-open-weight-alternatives/) - Aetherix white paper comparing six open-weight decision models on one NVIDIA DGX Spark with a shared 25-question smoke test, published October 2026.
 - [General Decision Models: Benchmarking and Insights Beyond Jev](https://arxiv.org/abs/2610.03935) - Paper introducing JEVal, a bilingual benchmark of 11,257 instances across 36 datasets, and the InnerJev-4B and InnerJev-27B decision models.
+- [OpenAI makes its Jev competitor widely available](https://techcrunch.com/2026/10/22/openai-makes-its-jev-competitor-widely-available-as-decision-model-competition-heats-up/) - TechCrunch on the Decisions API becoming available to all OpenAI customers on October 22, 2026, with voice and visual modalities added.
+- [Jev question types: Choice, Score and Noul](https://madewithjev.com/jev-question-types) - Reference guide to the three Jev question types and what each one returns.
+- [JevMan](https://opper.ai/jevman-benchmark/) - Opper AI open-source Pac-Man benchmark where each decision model plays 100 real-time games, returning a probability per direction at every junction.
 
 ## Related
 
