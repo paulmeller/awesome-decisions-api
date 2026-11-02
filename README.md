@@ -42,11 +42,13 @@
 - [OpenRouter Decisions](https://openrouter.ai/docs/guides/community/jev) - Jev via `/api/alpha/decisions` and `/api/v1/systemone`.
 - [Vercel AI Gateway](https://vercel.com/changelog/typesafe-ai-jev-now-available-on-ai-gateway) - `typesafe-ai/jev` through the AI SDK `evaluate` helper.
 - [Cloudflare Workers AI](https://developers.cloudflare.com/ai/models/typesafe/jev/) - `typesafe/jev` on the Workers AI binding. Clef is on the same binding; its model page is under Models.
+- [Decisions API Workbench](https://decisions-api.dev/docs) - Independent playground and API service exposing many decision models, including Jev, Liquid d1, Solar Decide, Perplexity Decider, and Cloudflare Clef, behind one System One endpoint with credit-based billing.
 
 ## SDKs
 
 - [TypeSafe Python SDK](https://github.com/typesafe-ai/typesafe-sdk-python) - Official Python library for the TypeSafe API.
 - [TypeSafe JavaScript SDK](https://github.com/typesafe-ai/typesafe-sdk-js) - Official TypeScript and JavaScript library for the TypeSafe API.
+- [AnyDecisionModel](https://github.com/mattt/AnyDecisionModel) - Apache-2.0 Swift package for typed yes/no, choice, and score decisions with probabilities, backed by local MLX, Core AI, or llama.cpp models, Clef decision heads, Jev, or Ollama.
 
 ## Runtimes
 
