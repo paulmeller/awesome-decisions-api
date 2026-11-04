@@ -36,6 +36,10 @@
 - [gutsy](https://github.com/kouhxp/gutsy) - Local 0.8B decision model (Apache-2.0), a Qwen3.5-0.8B fine-tune that runs on CPU through llama.cpp and answers yes/no, choice, and score questions through a Jev-style API.
 - [Databricks ai_decide](https://docs.databricks.com/aws/en/sql/language-manual/functions/ai_decide) - Beta Databricks AI Function that answers `noul`, `choice`, and `score` questions over text or structured data in SQL, returning a probability, a named choice, or a score on an ordered scale.
 - [Decision Models](https://decisionmodels.io/) - Hosted Jev-compatible API, formerly System1 Models, that serves the open-weight decision models `s1-fast`, `s1-pro`, and `s1-vision`, with an optional EU-hosted tier.
+- [OpenDecider-nano](https://huggingface.co/manjunathshiva/opendecider-nano) - Open ~400M encoder decision model (Apache-2.0) that answers choice, score, and yes/no questions with a calibrated probability for every option in one forward pass.
+- [Decision-2.0-Nox-4B](https://huggingface.co/vllm-sr/Decision-2.0-Nox-4B) - vLLM Semantic Router 4B decision model (Apache-2.0) that answers choice, yes/no, and score questions together with a probability for every answer.
+- [Quyet-1.0-Tiny](https://huggingface.co/chinhnc/Quyet-1.0-Tiny) - Compact 183M decision model (Apache-2.0) on mmBERT-small, tuned for English and Vietnamese, that returns calibrated probabilities in the `/v1/systemone` answer shape.
+- [CoCo-Decision-4B](https://huggingface.co/corners-ai/CoCo-Decision-4B) - Text-only 4B decision model on Qwen3.5-4B that returns a probability distribution for yes/no, choice, and score questions.
 
 ## Gateways
 
