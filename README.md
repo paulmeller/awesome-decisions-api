@@ -36,6 +36,8 @@
 - [gutsy](https://github.com/kouhxp/gutsy) - Local 0.8B decision model (Apache-2.0), a Qwen3.5-0.8B fine-tune that runs on CPU through llama.cpp and answers yes/no, choice, and score questions through a Jev-style API.
 - [Databricks ai_decide](https://docs.databricks.com/aws/en/sql/language-manual/functions/ai_decide) - Beta Databricks AI Function that answers `noul`, `choice`, and `score` questions over text or structured data in SQL, returning a probability, a named choice, or a score on an ordered scale.
 - [Decision Models](https://decisionmodels.io/) - Hosted Jev-compatible API, formerly System1 Models, that serves the open-weight decision models `s1-fast`, `s1-pro`, and `s1-vision`, with an optional EU-hosted tier.
+- [Kanana-2-v-decide-3b-2611](https://huggingface.co/kakaocorp/kanana-2-v-decide-3b-2611) - Kakao's 3B multimodal decision model that answers choice, noul, and score questions with a probability for each answer, and ships a System One-compatible HTTP server.
+- [Pea](https://itsvej.com/journal/pea-decisions-launch/) - Vej's 2B text decision model that returns a probability for every choice, noul, or score outcome, with hosted early access and gated open weights.
 
 ## Gateways
 
@@ -68,6 +70,8 @@
 - [Jev for Python engineers](https://vercel.com/blog/jev-for-python-engineers) - Vercel post introducing the experimental `evaluate()` API in the AI SDK for Python, with `ChoiceQuestion`, `ScoreQuestion`, and `NoulQuestion` types, published October 2026.
 - [The First Open-Weight Alternatives to Jev](https://whitepapers.aetherix.com/papers/jev-open-weight-alternatives/) - Aetherix white paper comparing six open-weight decision models on one NVIDIA DGX Spark with a shared 25-question smoke test, published October 2026.
 - [General Decision Models: Benchmarking and Insights Beyond Jev](https://arxiv.org/abs/2610.03935) - Paper introducing JEVal, a bilingual benchmark of 11,257 instances across 36 datasets, and the InnerJev-4B and InnerJev-27B decision models.
+- [Meet Koa Decisions](https://www.salesforce.com/news/stories/koa-decisions-salesforce-decision-models/) - Salesforce announcement of Koa Decisions, the successor to its HyperClassifier routing model, built on Gemma, with a planned developer API.
+- [What Is a Decisions API?](https://parallel.ai/articles/what-is-a-decisions-api) - Parallel explainer covering the three question types, the two main request shapes, a provider and pricing table, and when web-grounded decisions help.
 
 ## Related
 
