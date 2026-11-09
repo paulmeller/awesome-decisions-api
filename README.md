@@ -42,6 +42,8 @@
 - [OpenRouter Decisions](https://openrouter.ai/docs/guides/community/jev) - Jev via `/api/alpha/decisions` and `/api/v1/systemone`.
 - [Vercel AI Gateway](https://vercel.com/changelog/typesafe-ai-jev-now-available-on-ai-gateway) - `typesafe-ai/jev` through the AI SDK `evaluate` helper.
 - [Cloudflare Workers AI](https://developers.cloudflare.com/ai/models/typesafe/jev/) - `typesafe/jev` on the Workers AI binding. Clef is on the same binding; its model page is under Models.
+- [TrustedRouter Decide](https://aws.trustedrouter.com/docs/decide) - Attested gateway with `POST /api/alpha/decide` for boolean, choice, and score questions across tuned decision configurations and chat models.
+- [Triton AI Decisions](https://docs.tritonai.ucsd.edu/llm-api/decisions) - UC San Diego API offering a beta decisions model through both the OpenAI Decisions format and the SystemOne format.
 
 ## SDKs
 
