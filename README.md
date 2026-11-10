@@ -36,6 +36,7 @@
 - [gutsy](https://github.com/kouhxp/gutsy) - Local 0.8B decision model (Apache-2.0), a Qwen3.5-0.8B fine-tune that runs on CPU through llama.cpp and answers yes/no, choice, and score questions through a Jev-style API.
 - [Databricks ai_decide](https://docs.databricks.com/aws/en/sql/language-manual/functions/ai_decide) - Beta Databricks AI Function that answers `noul`, `choice`, and `score` questions over text or structured data in SQL, returning a probability, a named choice, or a score on an ordered scale.
 - [Decision Models](https://decisionmodels.io/) - Hosted Jev-compatible API, formerly System1 Models, that serves the open-weight decision models `s1-fast`, `s1-pro`, and `s1-vision`, with an optional EU-hosted tier.
+- [Torchcast Decision 4B](https://huggingface.co/torchcast-ai/torchcast-decision-4b) - Open-weight decision model (Apache-2.0) fine-tuned from Qwen3.5-4B that returns yes/no, choice, and score distributions in one forward pass through a TypeSafe-compatible API and a bundled server.
 
 ## Gateways
 
@@ -68,6 +69,7 @@
 - [Jev for Python engineers](https://vercel.com/blog/jev-for-python-engineers) - Vercel post introducing the experimental `evaluate()` API in the AI SDK for Python, with `ChoiceQuestion`, `ScoreQuestion`, and `NoulQuestion` types, published October 2026.
 - [The First Open-Weight Alternatives to Jev](https://whitepapers.aetherix.com/papers/jev-open-weight-alternatives/) - Aetherix white paper comparing six open-weight decision models on one NVIDIA DGX Spark with a shared 25-question smoke test, published October 2026.
 - [General Decision Models: Benchmarking and Insights Beyond Jev](https://arxiv.org/abs/2610.03935) - Paper introducing JEVal, a bilingual benchmark of 11,257 instances across 36 datasets, and the InnerJev-4B and InnerJev-27B decision models.
+- [Decision Models in Hugging Face](https://huggingface.co/blog/decision) - Hugging Face post introducing the Transformers `decision` pipeline, `AutoModelForDecision`, `/v1/systemone` serving in Transformers and llama.cpp, the Hub `decision-model` tag, and fine-tuning with `Trainer`, published November 10, 2026.
 
 ## Related
 
