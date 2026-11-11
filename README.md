@@ -36,12 +36,14 @@
 - [gutsy](https://github.com/kouhxp/gutsy) - Local 0.8B decision model (Apache-2.0), a Qwen3.5-0.8B fine-tune that runs on CPU through llama.cpp and answers yes/no, choice, and score questions through a Jev-style API.
 - [Databricks ai_decide](https://docs.databricks.com/aws/en/sql/language-manual/functions/ai_decide) - Beta Databricks AI Function that answers `noul`, `choice`, and `score` questions over text or structured data in SQL, returning a probability, a named choice, or a score on an ordered scale.
 - [Decision Models](https://decisionmodels.io/) - Hosted Jev-compatible API, formerly System1 Models, that serves the open-weight decision models `s1-fast`, `s1-pro`, and `s1-vision`, with an optional EU-hosted tier.
+- [Gemini Decision 1](https://blog.google/innovation-and-ai/technology/developers-tools/gemini-decisions-api/) - Google multimodal decision model behind the Gemini Decisions API, answering up to 1,000 yes/no, choice, and score questions per request with a confidence on every answer.
 
 ## Gateways
 
 - [OpenRouter Decisions](https://openrouter.ai/docs/guides/community/jev) - Jev via `/api/alpha/decisions` and `/api/v1/systemone`.
 - [Vercel AI Gateway](https://vercel.com/changelog/typesafe-ai-jev-now-available-on-ai-gateway) - `typesafe-ai/jev` through the AI SDK `evaluate` helper.
 - [Cloudflare Workers AI](https://developers.cloudflare.com/ai/models/typesafe/jev/) - `typesafe/jev` on the Workers AI binding. Clef is on the same binding; its model page is under Models.
+- [Vercel AI Gateway Gemini Decision 1](https://vercel.com/changelog/gemini-decision-1-now-available-on-ai-gateway) - Gemini Decision 1 as `google/gemini-decision-1` through the AI SDK and the `/v1/decisions` endpoint.
 
 ## SDKs
 
@@ -68,6 +70,7 @@
 - [Jev for Python engineers](https://vercel.com/blog/jev-for-python-engineers) - Vercel post introducing the experimental `evaluate()` API in the AI SDK for Python, with `ChoiceQuestion`, `ScoreQuestion`, and `NoulQuestion` types, published October 2026.
 - [The First Open-Weight Alternatives to Jev](https://whitepapers.aetherix.com/papers/jev-open-weight-alternatives/) - Aetherix white paper comparing six open-weight decision models on one NVIDIA DGX Spark with a shared 25-question smoke test, published October 2026.
 - [General Decision Models: Benchmarking and Insights Beyond Jev](https://arxiv.org/abs/2610.03935) - Paper introducing JEVal, a bilingual benchmark of 11,257 instances across 36 datasets, and the InnerJev-4B and InnerJev-27B decision models.
+- [How to Use the Gemini Decisions API](https://flaviocopes.com/gemini-decisions-api/) - Flavio Copes tutorial calling Gemini Decision 1 from Node.js with `noul`, `choice`, and `score` questions and branching on the probabilities.
 
 ## Related
 
