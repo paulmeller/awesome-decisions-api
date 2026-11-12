@@ -69,6 +69,9 @@
 - [Pea](https://itsvej.com/journal/pea-decisions-launch/) - Vej's 2B text decision model that returns a probability for every choice, noul, or score outcome, with hosted early access and gated open weights.
 - [Torchcast Decision 4B](https://huggingface.co/torchcast-ai/torchcast-decision-4b) - Open-weight decision model (Apache-2.0) fine-tuned from Qwen3.5-4B that returns yes/no, choice, and score distributions in one forward pass through a TypeSafe-compatible API and a bundled server.
 - [Gemini Decision 1](https://blog.google/innovation-and-ai/technology/developers-tools/gemini-decisions-api/) - Google multimodal decision model behind the Gemini Decisions API, answering up to 1,000 yes/no, choice, and score questions per request with a confidence on every answer.
+- [GLiDE](https://fastino.ai/blog/glide-decision-model-family) - Fastino family of five open-weight decision models from 0.4B to 27B on the System One schema, returning a probability for every option in one forward pass, with looped middle layers in the 27B and 9B.
+- [REAX 1.3](https://huggingface.co/decisionmodels/REAX-1.3) - Apache-2.0 decision model from the REAX lab on Bittensor subnet 92 that averages the per-option probabilities of two blended fine-tunes on one GPU and serves a Jev-compatible `/v1/systemone` API.
+- [karpo-decision-31B](https://huggingface.co/MachinePulseAI/karpo-decision-31B) - MachinePulse text-only decision model fine-tuned from Gemma 4 31B with a linear readout over up to 255 options, answering choice, noul, and score questions through `POST /v1/systemone`. MachinePulse Community License.
 
 ## Gateways
 
@@ -138,6 +141,8 @@
 - [What Is a Decisions API?](https://parallel.ai/articles/what-is-a-decisions-api) - Parallel explainer covering the three question types, the two main request shapes, a provider and pricing table, and when web-grounded decisions help.
 - [Decision Models in Hugging Face](https://huggingface.co/blog/decision) - Hugging Face post introducing the Transformers `decision` pipeline, `AutoModelForDecision`, `/v1/systemone` serving in Transformers and llama.cpp, the Hub `decision-model` tag, and fine-tuning with `Trainer`, published November 10, 2026.
 - [How to Use the Gemini Decisions API](https://flaviocopes.com/gemini-decisions-api/) - Flavio Copes tutorial calling Gemini Decision 1 from Node.js with `noul`, `choice`, and `score` questions and branching on the probabilities.
+- [Towards Foundation Decision Models: Drex](https://arxiv.org/abs/2611.07854) - Nace paper on four open Drex decision models from 8B to 27B, trained with supervised fine-tuning plus reinforcement learning from adjusted feedback (RLAF), with Decision Index, latency, and option-reordering results.
+- [Google's Gemini Decisions API to Handle Up to 1,000 Questions per Request](https://www.infoworld.com/article/4247774/googles-gemini-decisions-api-to-handle-up-to-1000-questions-per-request.html) - InfoWorld on Gemini Decision 1 pricing, latency, and limits compared with OpenAI's Decisions API, with analyst views on production risks.
 
 ## Related
 
